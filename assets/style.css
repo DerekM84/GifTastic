@@ -3,29 +3,28 @@ body {
     background-image:url("./images/background1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:1000px;
-    width:1300px;
+    
 }
 .button-form {
-    display:inline-block;
+    /* display:inline-block; */
     float:left;
-    width:40%;
+    width:50%;
     margin-left: 15px;
 }
 
 .category-input {
-    margin-top: 50px;
-margin-left:50px;
+margin-top: 50px;
+margin-left: 50px;
 height: 30px;
-width: 150px;
+width: 160px;
 
 }
 
 .add-button {
 background-color:rgb(164, 151, 236);
 color:black;
-height: 35px;
-width: 120px;
+height: 50px;
+width: 150px;
 border-radius:15px;
 border: 3px solid rgb(50,55,75);
 margin-left: 30px;
@@ -40,7 +39,7 @@ margin-left: 30px;
 
 .form-label {
 
-    font-size:30px;
+    font-size:40px;
     color:rgb(50,55,75);
     margin:auto;
     margin-top:40px;
@@ -48,17 +47,16 @@ margin-left: 30px;
 
 }
 .input-section {
-
-    margin:20px;
+    
     background-color: rgb(163,147,109);
-    height: 20vh;
+    height: 200px;
     border:3px solid rgb(50,55,75);
-    width:1300px;
+    width:100%;
 }
 
 .gifs{
-    height: 800px;
-    width: 1500px;
+    height: 80%;
+    width: 100%;
 
 
 }
@@ -67,7 +65,7 @@ margin-left: 30px;
     position:relative;
     z-index: 5;
     height: 300px;
-    width: 300px;
+    width: 285px;
     margin: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -76,39 +74,42 @@ margin-left: 30px;
 }
 
 .gif {
-
+    z-index: 5;
     border:5px solid rgb(163,147,109);
-    z-index: 4;
     position:relative;
     border-radius:10px;
     height: 250px;
-    width:250px;
+    width:275px;
     
 }
 .dynamic-buttons {
-    display:inline-block;
-    height: 20vh;
+    position:relative;
+
     float: right;
     width: 50%;
-    margin-top:5px;
-    overflow:scroll;
+    margin-top:-140px;
+
 
 }
 
 .gif-button {
     height: 45px;
-    font-size: 20px;
-    min-width:25%;
-    width: 25%;
-    margin:5px;;
+    font-size: 18px;
+    min-width:30%;
+    width: 30%;
+    margin: 5px;
     background-color:rgb(60,55,75);
     color:White;;
     border: 2px solid black;
     border-radius: 10px;
-    
+    box-shadow: 5px 5px black;
 }
 
 .gif-button:hover {
-background-color:  rgb(227,225,219);
+background-color: rgb(227,225,219);
 color:black;
+box-shadow: 5px 5px grey;
+
 }
+
+/* @media screen  */
