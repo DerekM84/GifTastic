@@ -1,0 +1,114 @@
+body {
+    /* background-color: rgba(128, 0, 0, 0.541); */
+    background-image:url("./images/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:1000px;
+    width:1300px;
+}
+.button-form {
+    display:inline-block;
+    float:left;
+    width:40%;
+    margin-left: 15px;
+}
+
+.category-input {
+    margin-top: 50px;
+margin-left:50px;
+height: 30px;
+width: 150px;
+
+}
+
+.add-button {
+background-color:rgb(164, 151, 236);
+color:black;
+height: 35px;
+width: 120px;
+border-radius:15px;
+border: 3px solid rgb(50,55,75);
+margin-left: 30px;
+}
+
+.add-button:hover {
+    background-color: rgb(227,225,219);
+    color: black;
+
+}
+
+
+.form-label {
+
+    font-size:30px;
+    color:rgb(50,55,75);
+    margin:auto;
+    margin-top:40px;
+    margin-bottom:30px;
+
+}
+.input-section {
+
+    margin:20px;
+    background-color: rgb(163,147,109);
+    height: 20vh;
+    border:3px solid rgb(50,55,75);
+    width:1300px;
+}
+
+.gifs{
+    height: 800px;
+    width: 1500px;
+
+
+}
+
+.gif-wrap {
+    position:relative;
+    z-index: 5;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:inline-block;
+
+}
+
+.gif {
+
+    border:5px solid rgb(163,147,109);
+    z-index: 4;
+    position:relative;
+    border-radius:10px;
+    height: 250px;
+    width:250px;
+    
+}
+.dynamic-buttons {
+    display:inline-block;
+    height: 20vh;
+    float: right;
+    width: 50%;
+    margin-top:5px;
+    overflow:scroll;
+
+}
+
+.gif-button {
+    height: 45px;
+    font-size: 20px;
+    min-width:25%;
+    width: 25%;
+    margin:5px;;
+    background-color:rgb(60,55,75);
+    color:White;;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+.gif-button:hover {
+background-color:  rgb(227,225,219);
+color:black;
+}
