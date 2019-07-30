@@ -3,6 +3,7 @@ body {
     background-image:url("./images/background1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    align-content: center;
 }
 
 .button-form {
@@ -21,6 +22,8 @@ border:3px solid rgb(50,55,75);
 }
 
 .add-button {
+
+
 background-color:rgb(18, 6, 83);
 color: rgb(163,147,109);
 font-family: cursive;
@@ -44,11 +47,12 @@ box-shadow: 2px 2px black;
 
 .form-label {
 
-    font-size:40px;
+    font-size:35px;
     color:rgb(50,55,75);
     margin:auto;
     margin-top:40px;
     margin-bottom:30px;
+    font-family: 'Inconsolata', monospace;
 
 }
 .input-section {
@@ -63,8 +67,7 @@ box-shadow: 2px 2px black;
 .gifs{
     height: 80%;
     width: 100%;
-
-
+    top:50px;
 }
 
 .gif-wrap {
@@ -105,7 +108,7 @@ box-shadow: 2px 2px black;
 
     float: right;
     width: 50%;
-    margin-top:-190px;
+    margin-top:-170px;
 
 
 }
@@ -150,12 +153,27 @@ box-shadow: 5px 5px grey;
 }
 
 @media screen and (max-width: 545px) {
-.input-section{
-    min-width:530px;
+
+.button-form {
+margin-left: -15px;;
+}
+
+.input-section {
+    min-width:250px;
+}
+
+.form-label {
+    text-align: center;
+    font-size:22px;
+    margin:auto;
+
 }
 .gif-button {
-    min-width:60%;
-    width: 80%;
-    margin-left:10px;
+    min-width:30%;
+    width: 60%;
+    margin-left:15%;
 } 
+.gifs{
+    top:
+}
 }

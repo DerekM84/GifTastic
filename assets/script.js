@@ -3,7 +3,7 @@ console.log("linked");
 $(document).ready(function () {
     console.log("doc rdy");
 
-    buttons = ["Game of Thrones", "Khaleesi", "Jon Snow"];
+    buttons = ["Game of Thrones", "It's Always Sunny", "Impractical Jokers"];
     buttons.forEach(e => {
         var $newButton = $("<button>").addClass("gif-button").attr("data-name", e).text(e);
         $(".dynamic-buttons").append($newButton);
