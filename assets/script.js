@@ -13,7 +13,7 @@ $(document).ready(function () {
     $(".button-form").submit(function () {
         event.preventDefault();
         $(".dynamic-buttons").empty();
-        var inputValue = $(".category-input").val();
+        var inputValue = $(".category-input").val().trim();
 
         if (buttons.indexOf(inputValue) === -1 && inputValue !== "") {
             buttons.push(inputValue);
@@ -39,16 +39,17 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response);
 
+
+            // For all 10 responses, generate image, with css wrap, and rating display. 
+
+
             for (let i = 0; i < 10; i++) {
+                
                 var animated = response.data[i].images.original.url;
                 var still = response.data[i].images.original_still.url;
+                
                 var div = $("<div>");
                 div.addClass("gif-wrap");
-                // div.attr("data-state", still);
-                // div.attr("data-still", still);
-                // div.attr("data-animated", animated);
-
-                // need to attach the links to still and animated to each div or img somehow. then make an onclick for swapping the states
 
                 var gifImage = $("<img>");
                 gifImage.addClass("gif");
@@ -57,6 +58,12 @@ $(document).ready(function () {
                 gifImage.attr("data-still", still);
                 gifImage.attr("data-animated", animated);
                 gifImage.attr("src", still);
+
+                var ratingDisplay = $("<p>");
+                ratingDisplay.addClass("rating-display");
+                ratingDisplay.text(response.data[i].rating);
+
+                div.append(ratingDisplay);
                 div.append(gifImage);
                 $(".gifs").prepend(div);
             }
