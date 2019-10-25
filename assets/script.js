@@ -42,7 +42,6 @@ $(document).ready(function () {
 
             // For all 10 responses, generate image, with css wrap, and rating display. 
 
-
             for (let i = 0; i < 10; i++) {
                 
                 var animated = response.data[i].images.original.url;
@@ -52,6 +51,7 @@ $(document).ready(function () {
                 div.addClass("gif-wrap");
 
                 var gifImage = $("<img>");
+
                 gifImage.addClass("gif");
                 gifImage.attr("alt", "gif error");
                 gifImage.attr("data-state", "still");
@@ -70,6 +70,8 @@ $(document).ready(function () {
         })
 
     });
+
+    })
 
     $(document).on("click", ".gif", function () {
         console.log("gif clicked");
